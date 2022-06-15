@@ -1,8 +1,9 @@
-FROM python:3.9.1
+FROM python:latest
 
-RUN pip install pandas
+RUN apt-get install curl
+RUN pip install pyarrow pandas sqlalchemy psycopg2
 
 WORKDIR /usr/app
-COPY pipeline.py pipeline.py
+COPY ingest_data.py ingest_data.py
 
-ENTRYPOINT [ "python", "pipeline.py"]
+ENTRYPOINT [ "python", "ingest_data.py"]
