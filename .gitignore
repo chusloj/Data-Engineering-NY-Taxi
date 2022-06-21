@@ -8,3 +8,4 @@ terraform/
 .env
 airflow/logs
 airflow/plugins
+__pycache__
