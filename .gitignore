@@ -8,4 +8,5 @@ terraform/
 .env
 airflow/logs
 airflow/plugins
+spark/data
 __pycache__
