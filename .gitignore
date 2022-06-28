@@ -9,4 +9,5 @@ terraform/
 airflow/logs
 airflow/plugins
 spark/data
+spark/code
 __pycache__

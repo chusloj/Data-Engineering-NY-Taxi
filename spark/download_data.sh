@@ -22,6 +22,6 @@ for MONTH in {1..12}; do
     mkdir -p ${LOCAL_PREFIX}
     curl -o ${LOCAL_PATH} ${URL}
 
-    echo "compressing ${LOCAL_PATH}"
-    gzip ${LOCAL_PATH}
+    # echo "compressing ${LOCAL_PATH}"
+    # gzip ${LOCAL_PATH}
 done
